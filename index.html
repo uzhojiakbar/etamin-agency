@@ -1,13 +1,592 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Etamin</title>
-</head>
-<body>
-    <center>
-    <h1>ETAMIN</h1>
-    <button onclick="window.location.href='https://www.linkedin.com/company/etamin.agency';">Contact Us</button>
-    </center>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- === SEO Meta Tags === -->
+    <title>
+      Etamin IT Solutions | Custom Software, AI & Technology Experts
+    </title>
+    <meta
+      name="description"
+      content="Etamin IT Solutions: Your partner for innovative custom software development, AI & Machine Learning, Data Science, and Cybersecurity solutions. Let's build your vision."
+    />
+    <meta
+      name="keywords"
+      content="custom software, AI solutions, machine learning, data science, cybersecurity, IT consulting, Etamin IT Solutions, technology development"
+    />
+    <link rel="canonical" href="https://www.etamin.digital/" />
+    <!-- REPLACE with your actual domain -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.etamin.digital/" />
+    <!-- REPLACE -->
+    <meta
+      property="og:title"
+      content="Etamin IT Solutions | Custom Software, AI & Technology Experts"
+    />
+    <meta
+      property="og:description"
+      content="Etamin IT Solutions: Your partner for innovative custom software development, AI & Machine Learning, Data Science, and Cybersecurity solutions."
+    />
+    <meta
+      property="og:image"
+      content="https://www.etamin.digital/social-share-image.png"
+    />
+    <!-- REPLACE with a dedicated social share image URL (e.g., 1200x630px) -->
+    <meta property="og:site_name" content="Etamin IT Solutions" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.etamin.digital/" />
+    <!-- REPLACE -->
+    <meta
+      name="twitter:title"
+      content="Etamin IT Solutions | Custom Software, AI & Technology Experts"
+    />
+    <meta
+      name="twitter:description"
+      content="Etamin IT Solutions: Your partner for innovative custom software development, AI & Machine Learning, Data Science, and Cybersecurity solutions."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.etamin.digital/social-share-image.png"
+    />
+    <!-- REPLACE with a dedicated social share image URL -->
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <!-- Favicon - Replace base64 with a linked .ico or .png file for better practice -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <!-- Consider: <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Etamin IT Solutions",
+        "url": "https://www.etamin.digital/", // REPLACE with your actual domain
+        "logo": "https://www.etamin.digital/logo.png", // REPLACE with your actual logo URL
+        "description": "Etamin IT Solutions specializes in custom software development, AI and machine learning solutions, data science, and cybersecurity services to help businesses innovate and grow.",
+        "email": "info@etamin.digital",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "info@etamin.digital",
+          "contactType": "Customer Service"
+          // "telephone": "+1-XXX-XXX-XXXX", // Optional: Add your phone number
+        }
+        // "sameAs": [ // Optional: Add links to your social media profiles
+        //   "https://www.linkedin.com/company/YourCompanyPage"
+        // ]
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden"
+      style="font-family: 'Space Grotesk', 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="hidden sm:flex sm:flex-row sm:items-center sm:justify-between border-b border-solid border-b-[#243647] px-4 py-3 sm:gap-6 md:px-6 lg:px-10"
+        >
+          <a
+            href="/"
+            aria-label="Etamin IT Solutions Homepage"
+            class="flex items-center gap-4 text-white no-underline hover:opacity-80 transition-opacity"
+          >
+            <div class="size-4" aria-hidden="true">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535">
+                    <rect width="48" height="48" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span
+              class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+              >Etamin IT Solutions</span
+            >
+            <!-- Changed from H2 to span to avoid multiple H2s in header for SEO, styling is preserved -->
+          </a>
+          <nav
+            aria-label="Main navigation"
+            class="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4 md:gap-6 lg:gap-8 w-full sm:w-auto"
+          >
+            <div
+              class="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4 md:gap-9"
+            >
+              <a
+                class="text-white text-sm font-medium leading-normal py-1 sm:py-0 text-center sm:text-left hover:text-gray-300"
+                href="#expertise-section"
+                >Expertise</a
+              >
+              <a
+                class="text-white text-sm font-medium leading-normal py-1 sm:py-0 text-center sm:text-left hover:text-gray-300"
+                href="#company-section"
+                >Company</a
+              >
+            </div>
+            <a
+              href="#contact-section"
+              class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] no-underline hover:bg-blue-700 transition-colors"
+            >
+              <span class="truncate">Contact</span>
+            </a>
+          </nav>
+        </header>
+
+        <main
+          role="main"
+          class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <section
+              role="region"
+              aria-labelledby="hero-heading"
+              class="@container"
+            >
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[380px] @[480px]:min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.1) 0%,
+                        rgba(0, 0, 0, 0.4) 100%
+                      ),
+                      url('https://cdn.usegalileo.ai/sdxl10/22d7dbec-e744-498c-b37f-2e49951a738a.png');
+                  "
+                  role="img"
+                  aria-label="Abstract technology background representing innovation"
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      id="hero-heading"
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Your vision, our technology
+                    </h1>
+                    <!-- RESTORED to H2 as per original structure for design consistency -->
+                    <h2
+                      class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                    >
+                      We design and build custom software and AI solutions to
+                      help you transform and scale your business.
+                    </h2>
+                  </div>
+                  <a
+                    href="#contact-section"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] no-underline hover:bg-blue-700 transition-colors"
+                  >
+                    <span class="truncate">Get in Touch</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section
+              role="region"
+              aria-labelledby="expertise-heading-main"
+              id="expertise-section"
+              class="flex flex-col gap-10 px-4 py-10 @container"
+            >
+              <div class="flex flex-col gap-4">
+                <h2
+                  id="expertise-heading-main"
+                  class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Our expertise
+                </h2>
+                <p
+                  class="text-white text-base font-normal leading-normal max-w-[720px]"
+                >
+                  With our deep knowledge of technology and extensive experience
+                  in software development, AI, and data engineering, we're
+                  committed to helping you achieve your goals.
+                </p>
+              </div>
+              <div
+                class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0"
+              >
+                <article
+                  role="article"
+                  class="flex flex-1 gap-3 rounded-lg border border-[#344d65] bg-[#1a2632] p-4 flex-col"
+                >
+                  <div
+                    class="text-white"
+                    data-icon="MonitorPlay"
+                    data-size="24px"
+                    data-weight="regular"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Zm-48,48a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,224Zm-3.56-110.66-48-32A8,8,0,0,0,104,88v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,137.05V103l25.58,17Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-white text-base font-bold leading-tight">
+                      Custom Software
+                    </h3>
+                    <p
+                      class="text-[#93adc8] text-sm font-normal leading-normal"
+                    >
+                      We build software that is tailored to your unique needs,
+                      whether you're a startup or an enterprise.
+                    </p>
+                  </div>
+                </article>
+                <article
+                  role="article"
+                  class="flex flex-1 gap-3 rounded-lg border border-[#344d65] bg-[#1a2632] p-4 flex-col"
+                >
+                  <div
+                    class="text-white"
+                    data-icon="Robot"
+                    data-size="24px"
+                    data-weight="regular"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M200,48H136V16a8,8,0,0,0-16,0V48H56A32,32,0,0,0,24,80V192a32,32,0,0,0,32,32H200a32,32,0,0,0,32-32V80A32,32,0,0,0,200,48Zm16,144a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V80A16,16,0,0,1,56,64H200a16,16,0,0,1,16,16Zm-52-56H92a28,28,0,0,0,0,56h72a28,28,0,0,0,0-56Zm-28,16v24H120V152ZM80,164a12,12,0,0,1,12-12h12v24H92A12,12,0,0,1,80,164Zm84,12H152V152h12a12,12,0,0,1,0,24ZM72,108a12,12,0,1,1,12,12A12,12,0,0,1,72,108Zm88,0a12,12,0,1,1,12,12A12,12,0,0,1,160,108Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-white text-base font-bold leading-tight">
+                      AI & Machine Learning
+                    </h3>
+                    <p
+                      class="text-[#93adc8] text-sm font-normal leading-normal"
+                    >
+                      Leverage the power of AI and machine learning to gain
+                      insights, automate processes, and more.
+                    </p>
+                  </div>
+                </article>
+                <article
+                  role="article"
+                  class="flex flex-1 gap-3 rounded-lg border border-[#344d65] bg-[#1a2632] p-4 flex-col"
+                >
+                  <div
+                    class="text-white"
+                    data-icon="PresentationChart"
+                    data-size="24px"
+                    data-weight="regular"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-white text-base font-bold leading-tight">
+                      Data Science
+                    </h3>
+                    <p
+                      class="text-[#93adc8] text-sm font-normal leading-normal"
+                    >
+                      Uncover valuable insights and solve complex business
+                      challenges with our data science expertise.
+                    </p>
+                  </div>
+                </article>
+                <article
+                  role="article"
+                  class="flex flex-1 gap-3 rounded-lg border border-[#344d65] bg-[#1a2632] p-4 flex-col"
+                >
+                  <div
+                    class="text-white"
+                    data-icon="Shield"
+                    data-size="24px"
+                    data-weight="regular"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M208,40H48A16,16,0,0,0,32,56v58.77c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56l160,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-white text-base font-bold leading-tight">
+                      Cybersecurity
+                    </h3>
+                    <p
+                      class="text-[#93adc8] text-sm font-normal leading-normal"
+                    >
+                      Protect your organization from cyber threats with our
+                      comprehensive cybersecurity services.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section
+              role="region"
+              aria-labelledby="contact-heading-main"
+              id="contact-section"
+            >
+              <h2
+                id="contact-heading-main"
+                class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              >
+                Contact us
+              </h2>
+              <p
+                class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4"
+              >
+                Ready to start your next project? Let's talk about how we can
+                help you achieve your goals.
+              </p>
+              <div
+                class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2"
+              >
+                <div
+                  class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+                  data-icon="Envelope"
+                  data-size="24px"
+                  data-weight="regular"
+                  aria-hidden="true"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p
+                    class="text-white text-base font-medium leading-normal line-clamp-1"
+                  >
+                    <a href="mailto:info@etamin.digital" class="hover:underline"
+                      >info@etamin.digital</a
+                    >
+                  </p>
+                  <p
+                    class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2"
+                  >
+                    <a href="mailto:info@etamin.digital" class="hover:underline"
+                      >info@etamin.digital</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <form
+                action="#"
+                method="POST"
+                class="flex items-center px-4 py-3 gap-3 @container"
+                onsubmit="sendMessage(event)"
+              >
+                <label
+                  for="project-details-input"
+                  class="flex flex-col min-w-40 h-12 flex-1"
+                >
+                  <span class="sr-only">Tell us about your project</span>
+                  <div
+                    class="flex w-full flex-1 items-stretch rounded-lg h-full"
+                  >
+                    <input
+                      type="text"
+                      id="project-details-input"
+                      name="project_details"
+                      placeholder="Tell us about your project"
+                      class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#243647] focus:border-none h-full placeholder:text-[#93adc8] px-4 rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+                      value=""
+                    />
+                    <div
+                      class="flex border-none bg-[#243647] items-center justify-center pr-4 rounded-r-lg border-l-0 !pr-2"
+                    >
+                      <div class="flex items-center gap-4 justify-end">
+                        <div class="flex items-center gap-1">
+                          <button
+                            type="submit"
+                            aria-label="Send message"
+                            class="flex items-center justify-center p-1.5 text-[#93adc8] hover:text-white transition-colors"
+                          >
+                            <div
+                              data-icon="PaperPlane"
+                              data-size="20px"
+                              data-weight="regular"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20px"
+                                height="20px"
+                                fill="currentColor"
+                                viewBox="0 0 256 256"
+                              >
+                                <path
+                                  d="M237.9,200.09,141.85,32.18a16,16,0,0,0-27.89,0l-95.89,168a16,16,0,0,0,19.25,22.92l90.47-31,.1,0,.09,0,90.68,31a16,16,0,0,0,19.24-23Zm-14,7.84L136,177.86V120a8,8,0,0,0-16,0v57.78L32.12,207.94,32,208,127.86,40,224,208Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                        <button
+                          type="submit"
+                          class="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#1980e6] text-white text-sm font-medium leading-normal hidden @[480px]:block hover:bg-blue-700 transition-colors"
+                        >
+                          <span class="truncate">Send message</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </form>
+            </section>
+            <section id="company-section" class="hidden">
+              {/* Add content here if needed for the "Company" nav link */}
+              <h2 class="text-white text-xl">About Our Company</h2>
+            </section>
+          </div>
+        </main>
+        <footer
+          class="text-center text-sm text-gray-500 py-8 border-t border-solid border-t-[#243647]"
+        >
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Etamin IT Solutions. All Rights Reserved.
+        </footer>
+      </div>
+    </div>
+    <script>
+      async function sendMessage(event) {
+        event.preventDefault();
+        const input = document.getElementById("project-details-input");
+        const message = input.value.trim();
+
+        if (!message) {
+          showToast("Please enter a message.", "error");
+          return;
+        }
+
+        try {
+          const response = await fetch(
+            "http://65.108.155.163:1221/api/message",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ message }),
+            }
+          );
+
+          if (response.ok) {
+            showToast("Message sent successfully!", "success");
+            input.value = "";
+          } else {
+            showToast("Failed to send message. Please try again.", "error");
+          }
+        } catch (error) {
+          showToast("An error occurred. Please try again.", "error");
+        }
+      }
+
+      function showToast(message, type) {
+        const toast = document.createElement("div");
+        toast.textContent = message;
+        toast.className = `toast ${type}`;
+        document.body.appendChild(toast);
+
+        setTimeout(() => {
+          toast.classList.add("fade-out");
+          toast.addEventListener("transitionend", () => toast.remove());
+        }, 3000);
+      }
+    </script>
+    <style>
+      .toast {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #243647;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        opacity: 1;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      .toast.success {
+        background-color: #1980e6;
+      }
+      .toast.error {
+        background-color: #e63946;
+      }
+      .toast.fade-out {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+      }
+    </style>
+  </body>
 </html>
